@@ -9,3 +9,7 @@
 ```bash
 https://asciinema.org/a/LuTV5ONzUpKvGnrs2MY0f1rQj
 ```
+## brain-calc: 
+```bash
+https://asciinema.org/a/KyscLlbOSvHqdqpqN0yLcsUv6
+```
