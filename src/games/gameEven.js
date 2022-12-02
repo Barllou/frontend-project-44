@@ -1,11 +1,9 @@
-const expIsWelcomeFunction = require('../index.js');
+const expgetUserGreeting = require('../index.js');
 const expgetRandomNumber = require('../randomNumber.js');
 const expgetUserResponse = require('../index.js');
-const expgetGameRules = require('../index.js');
 
 const isFindEvenNumber = () => {
-  const nameUser = expIsWelcomeFunction.isWelcomeFunction();
-  expgetGameRules.getGameRules('brain-even');
+  const nameUser = expgetUserGreeting.getUserGreeting('brain-even');
 
   for (let i = 1; i <= 3; i += 1) {
     const randomNumber = expgetRandomNumber.getRandomNumber(10);
