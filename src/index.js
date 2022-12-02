@@ -17,8 +17,8 @@ const getGameRules = (value) => {
 };
 
 //Получение ответа пользователя.
-const getUserResponse = (value) => {
-  return readlineSync.question(`${value} `);
+const getUserResponse = () => {
+  return readlineSync.question(`Your answer: `);
 };
 
 module.exports.isWelcomeFunction = isWelcomeFunction;
