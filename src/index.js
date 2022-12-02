@@ -14,10 +14,9 @@ const getUserGreeting = (value) => {
   return nameUser;
 };
 
-
 //Получение ответа пользователя.
 const getUserResponse = () => {
-  return readlineSync.question(`Your answer: `);
+  return readlineSync.question('Your answer: ');
 };
 
 module.exports.getUserGreeting = getUserGreeting;

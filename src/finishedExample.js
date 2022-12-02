@@ -1,9 +1,11 @@
-const  getCountExample = (firstNum, secondNum, sign) => {
+const getCountExample = (firstNum, secondNum, sign) => {
   if (sign === '+') {
     return firstNum + secondNum;
-  } else if (sign === '-') {
+  }
+  if (sign === '-') {
     return firstNum - secondNum;
-  } else if (sign === '*') {
+  }
+  if (sign === '*') {
     return firstNum * secondNum;
   }
 };

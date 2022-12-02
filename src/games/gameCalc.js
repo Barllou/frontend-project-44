@@ -8,11 +8,11 @@ const isFindCountNumbers = () => {
   const symbolArr = ['+', '-', '*'];
 
   for (let i = 1; i <= 3; i += 1) {
-    const firstRandomNumber = expgetRandomNumber.getRandomNumber(10);
-    const secondRandomNumber = expgetRandomNumber.getRandomNumber(10);
+    const firstNum = expgetRandomNumber.getRandomNumber(10);
+    const secondNum = expgetRandomNumber.getRandomNumber(10);
     const randomSymbol = expgetRandomNumber.getRandomNumber(symbolArr.length - 1);
-    const finishedExample = expgetCountExample.getCountExample(firstRandomNumber, secondRandomNumber, symbolArr[randomSymbol]);
-    console.log(`Question: ${firstRandomNumber} ${symbolArr[randomSymbol]} ${secondRandomNumber}`);
+    const finishedExample = expgetCountExample.getCountExample(firstNum, secondNum, symbolArr[randomSymbol]);
+    console.log(`Question: ${firstNum} ${symbolArr[randomSymbol]} ${secondNum}`);
     const userResponse = expgetUserResponse.getUserResponse();
 
     if (+userResponse === finishedExample) {
