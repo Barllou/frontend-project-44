@@ -1,7 +1,7 @@
-const expIsWelcomeFunction = require('../../src/index.js');
-const expgetRandomNumber = require('../../src/randomNumber.js');
-const expgetUserResponse = require('../../src/index.js');
-const expgetGameRules = require('../../src/index.js');
+const expIsWelcomeFunction = require('../index.js');
+const expgetRandomNumber = require('../randomNumber.js');
+const expgetUserResponse = require('../index.js');
+const expgetGameRules = require('../index.js');
 
 const isFindEvenNumber = () => {
   const nameUser = expIsWelcomeFunction.isWelcomeFunction();
