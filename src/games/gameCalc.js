@@ -14,7 +14,7 @@ const isFindCountNumbers = () => {
     const randomSymbol = expgetRandomNumber.getRandomNumber(symbolArr.length - 1);
     const finishedExample = eval(`${firstRandomNumber} ${symbolArr[randomSymbol]} ${secondRandomNumber}`);
     console.log(`Question: ${firstRandomNumber} ${symbolArr[randomSymbol]} ${secondRandomNumber}`);
-    const userResponse = expgetUserResponse.getUserResponse('Your answer:');
+    const userResponse = expgetUserResponse.getUserResponse();
 
     if (+userResponse === finishedExample) {
       console.log('Correct!');

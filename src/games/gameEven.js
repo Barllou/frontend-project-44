@@ -10,7 +10,7 @@ const isFindEvenNumber = () => {
   for (let i = 1; i <= 3; i += 1) {
     const randomNumber = expgetRandomNumber.getRandomNumber(10);
     console.log(`Question: ${randomNumber}`);
-    const userResponse = expgetUserResponse.getUserResponse('Your answer:');
+    const userResponse = expgetUserResponse.getUserResponse();
     const parity = randomNumber % 2 === 0 ? 'yes' : 'no';
 
     if (userResponse !== 'yes' && userResponse !== 'no') {
