@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 
-const expGetUserName = require('../src/cli.js');
+const expIsWelcomeFunction = require('../src/index.js');
 
-console.log('Welcome to the Brain Games!');
-expGetUserName.getUserName();
+expIsWelcomeFunction.isWelcomeFunction();
