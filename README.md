@@ -13,3 +13,5 @@ https://asciinema.org/a/LuTV5ONzUpKvGnrs2MY0f1rQj
 ```bash
 https://asciinema.org/a/KyscLlbOSvHqdqpqN0yLcsUv6
 ```
+## brain-gcd:
+https://asciinema.org/a/i8tXvq55pySscp7WHeMOZHgTX
