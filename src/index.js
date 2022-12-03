@@ -1,21 +1,30 @@
-const expGetUserName = require('../src/cli.js');
 const readlineSync = require('readline-sync');
+const { getUserName } = require('./cli.js');
 
-//Знакомство, правила и приветствие пользователя.
+// Знакомство, правила и приветствие пользователя.
 const getUserGreeting = (value) => {
   console.log('Welcome to the Brain Games!');
-  const nameUser = expGetUserName.getUserName();
+  const nameUser = getUserName();
 
-  if (value === 'brain-calc') {
-    console.log('What is the result of the expression?');
-  } else if (value === 'brain-even') {
-    console.log('Answer "yes" if the number is even, otherwise answer "no".');
+  switch (value) {
+    case 'brain-calc':
+      console.log('What is the result of the expression?');
+      break;
+    case 'brain-even':
+      console.log('Answer "yes" if the number is even, otherwise answer "no".');
+      break;
+    case 'brain-gcd':
+      console.log('Find the greatest common divisor of given numbers.');
+      break;
+    default:
+      break;
   }
   return nameUser;
 };
 
-//Получение ответа пользователя.
-const getUserResponse = () => {
+// Вопрос / ответ пользователя.
+const getUserResponse = (value) => {
+  console.log(value);
   return readlineSync.question('Your answer: ');
 };
 

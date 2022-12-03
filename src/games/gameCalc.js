@@ -1,19 +1,17 @@
-const expgetUserGreeting = require('../index.js');
-const expgetRandomNumber = require('../randomNumber.js');
-const expgetUserResponse = require('../index.js');
-const expgetCountExample = require('../finishedExample.js');
+const generalGameLogic = require('../index.js');
+const { getRandomNumber } = require('../randomNumber.js');
+const { getCountExample } = require('../finishedExample.js');
 
 const isFindCountNumbers = () => {
-  const nameUser = expgetUserGreeting.getUserGreeting('brain-calc');
+  const nameUser = generalGameLogic.getUserGreeting('brain-calc');
   const symbolArr = ['+', '-', '*'];
 
   for (let i = 1; i <= 3; i += 1) {
-    const firstNum = expgetRandomNumber.getRandomNumber(10);
-    const secondNum = expgetRandomNumber.getRandomNumber(10);
-    const randomSymbol = expgetRandomNumber.getRandomNumber(symbolArr.length - 1);
-    const finishedExample = expgetCountExample.getCountExample(firstNum, secondNum, symbolArr[randomSymbol]);
-    console.log(`Question: ${firstNum} ${symbolArr[randomSymbol]} ${secondNum}`);
-    const userResponse = expgetUserResponse.getUserResponse();
+    const firstNum = getRandomNumber(10);
+    const secondNum = getRandomNumber(10);
+    const randomSymbol = symbolArr[getRandomNumber(symbolArr.length - 1)];
+    const finishedExample = getCountExample(firstNum, secondNum, randomSymbol);
+    const userResponse = generalGameLogic.getUserResponse(`Question: ${firstNum} ${randomSymbol} ${secondNum}`);
 
     if (+userResponse === finishedExample) {
       console.log('Correct!');
@@ -25,3 +23,15 @@ const isFindCountNumbers = () => {
 };
 
 module.exports.isFindCountNumbers = isFindCountNumbers;
+
+/* const fn = (cb) => {
+  for () {
+    cb();
+  }
+};
+
+fn(() => {
+  if (true) {
+    console.log('yes');
+  }
+}); */

@@ -1,13 +1,15 @@
 const getCountExample = (firstNum, secondNum, sign) => {
-  if (sign === '+') {
-    return firstNum + secondNum;
+  switch (sign) {
+    case '+':
+      return firstNum + secondNum;
+    case '-':
+      return firstNum - secondNum;
+    case '*':
+      return firstNum * secondNum;
+    default:
+      break;
   }
-  if (sign === '-') {
-    return firstNum - secondNum;
-  }
-  if (sign === '*') {
-    return firstNum * secondNum;
-  }
+  return 'false';
 };
 
 module.exports.getCountExample = getCountExample;

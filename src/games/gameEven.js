@@ -1,15 +1,13 @@
-const expgetUserGreeting = require('../index.js');
-const expgetRandomNumber = require('../randomNumber.js');
-const expgetUserResponse = require('../index.js');
+const generalGameLogic = require('../index.js');
+const { getRandomNumber } = require('../randomNumber.js');
 
 const isFindEvenNumber = () => {
-  const nameUser = expgetUserGreeting.getUserGreeting('brain-even');
+  const nameUser = generalGameLogic.getUserGreeting('brain-even');
 
   for (let i = 1; i <= 3; i += 1) {
-    const randomNumber = expgetRandomNumber.getRandomNumber(10);
-    console.log(`Question: ${randomNumber}`);
-    const userResponse = expgetUserResponse.getUserResponse();
-    const parity = randomNumber % 2 === 0 ? 'yes' : 'no';
+    const randomNum = getRandomNumber(10);
+    const userResponse = generalGameLogic.getUserResponse(`Question: ${randomNum}`);
+    const parity = randomNum % 2 === 0 ? 'yes' : 'no';
 
     if (userResponse !== 'yes' && userResponse !== 'no') {
       return `Let's try again, ${nameUser}!`;
