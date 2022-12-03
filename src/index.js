@@ -1,6 +1,8 @@
 const readlineSync = require('readline-sync');
 const { getUserName } = require('./cli.js');
 
+// Общая логика игры
+
 // Знакомство, правила и приветствие пользователя.
 const getUserGreeting = (value) => {
   console.log('Welcome to the Brain Games!');
