@@ -3,3 +3,4 @@
 const expIsWelcomeFunction = require('../src/index.js');
 
 expIsWelcomeFunction.isWelcomeFunction();
+l
