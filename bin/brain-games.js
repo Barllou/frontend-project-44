@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 
-const expIsWelcomeFunction = require('../src/index.js');
+const { welcomeFunction } = require('../src/index.js');
 
-expIsWelcomeFunction.isWelcomeFunction();
-l
+welcomeFunction();

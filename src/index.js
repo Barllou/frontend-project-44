@@ -28,5 +28,13 @@ const getUserResponse = (value) => {
   return readlineSync.question('Your answer: ');
 };
 
+// Приветствие пользователя brain-games.js (не удалять!)
+const welcomeFunction = () => {
+  console.log('Welcome to the Brain Games!');
+  const userName = readlineSync.question('May I have your name? ');
+  console.log(`Hello ${userName}!`);
+};
+
 module.exports.getUserGreeting = getUserGreeting;
 module.exports.getUserResponse = getUserResponse;
+module.exports.welcomeFunction = welcomeFunction;

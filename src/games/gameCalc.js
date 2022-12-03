@@ -23,15 +23,3 @@ const isFindCountNumbers = () => {
 };
 
 module.exports.isFindCountNumbers = isFindCountNumbers;
-
-/* const fn = (cb) => {
-  for () {
-    cb();
-  }
-};
-
-fn(() => {
-  if (true) {
-    console.log('yes');
-  }
-}); */
