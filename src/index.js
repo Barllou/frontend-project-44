@@ -11,6 +11,9 @@ const isGamesLogic = (userValue, uniqValue, userName, iter, nameGame) => {
   } else if (userValue !== uniqValue && nameGame === 'brain-gcd') {
     console.log(`${userValue} is wrong answer ;(. Correct answer was ${uniqValue}. \nLet's try again, ${userName}!`);
     return false;
+  } else if (userValue !== uniqValue && nameGame === 'brain-progression') {
+    console.log(`${userValue} is wrong answer ;(. Correct answer was ${uniqValue}. \nLet's try again, ${userName}!`);
+    return false;
   } else if (userValue !== uniqValue && nameGame === 'brain-even') {
     console.log(`Let's try again, ${userName}!`);
     return false;
@@ -34,6 +37,9 @@ const getUserGreeting = (value) => {
       break;
     case 'brain-gcd':
       console.log('Find the greatest common divisor of given numbers.');
+      break;
+    case 'brain-progression':
+      console.log('What number is missing in the progression?');
       break;
     default:
       break;
