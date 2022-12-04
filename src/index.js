@@ -2,6 +2,23 @@ const readlineSync = require('readline-sync');
 const { getUserName } = require('./cli.js');
 
 // Общая логика игры
+const isGamesLogic = (userValue, uniqValue, userName, iter, nameGame) => {
+  if (userValue == uniqValue) {
+    console.log('Correct!');
+  } else if (userValue !== uniqValue && nameGame === 'brain-calc') {
+    console.log(`${userValue} is wrong answer ;(. Correct answer was ${uniqValue}. \nLet's try again, ${userName}!`);
+    return false;
+  } else if (userValue !== uniqValue && nameGame === 'brain-gcd') {
+    console.log(`${userValue} is wrong answer ;(. Correct answer was ${uniqValue}. \nLet's try again, ${userName}!`);
+    return false;
+  } else if (userValue !== uniqValue && nameGame === 'brain-even') {
+    console.log(`Let's try again, ${userName}!`);
+    return false;
+  }
+  if (iter === 3) {
+    console.log(`Congratulations, ${userName}!`);
+  }
+};
 
 // Знакомство, правила и приветствие пользователя.
 const getUserGreeting = (value) => {
@@ -40,3 +57,4 @@ const welcomeFunction = () => {
 module.exports.getUserGreeting = getUserGreeting;
 module.exports.getUserResponse = getUserResponse;
 module.exports.welcomeFunction = welcomeFunction;
+module.exports.isGamesLogic = isGamesLogic;
