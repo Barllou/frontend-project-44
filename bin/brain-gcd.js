@@ -2,4 +2,4 @@
 
 const { getGreatestCommonDivisor } = require('../src/games/gameGcd.js');
 
-console.log(getGreatestCommonDivisor());
+getGreatestCommonDivisor();

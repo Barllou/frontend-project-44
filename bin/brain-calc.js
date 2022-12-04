@@ -2,4 +2,4 @@
 
 const { isFindCountNumbers } = require('../src/games/gameCalc.js');
 
-console.log(isFindCountNumbers());
+isFindCountNumbers();
