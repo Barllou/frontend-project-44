@@ -9,16 +9,11 @@ const isFindEvenNumber = () => {
     const userResponse = generalGameLogic.getUserResponse(`Question: ${randomNum}`);
     const parity = randomNum % 2 === 0 ? 'yes' : 'no';
 
-    if (userResponse !== 'yes' && userResponse !== 'no') {
-      return `Let's try again, ${nameUser}!`;
-    }
-    if (parity === userResponse) {
-      console.log('Correct!');
-    } else {
-      return `Let's try again, ${nameUser}!`;
+    const resultOutput = generalGameLogic.isGamesLogic(userResponse, parity, nameUser, i, 'brain-even');
+    if (resultOutput === false) {
+      break;
     }
   }
-  return `Congratulations, ${nameUser}!`;
 };
 
 module.exports.isFindEvenNumber = isFindEvenNumber;

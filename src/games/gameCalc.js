@@ -13,13 +13,11 @@ const isFindCountNumbers = () => {
     const finishedExample = getCountExample(firstNum, secondNum, randomSymbol);
     const userResponse = generalGameLogic.getUserResponse(`Question: ${firstNum} ${randomSymbol} ${secondNum}`);
 
-    if (+userResponse === finishedExample) {
-      console.log('Correct!');
-    } else {
-      return `${userResponse} is wrong answer ;(. Correct answer was ${finishedExample}. \nLet's try again, ${nameUser}!`;
+    const resultOutput = generalGameLogic.isGamesLogic(userResponse, finishedExample, nameUser, i, 'brain-calc');
+    if (resultOutput === false) {
+      break;
     }
   }
-  return `Congratulations, ${nameUser}!`;
 };
 
 module.exports.isFindCountNumbers = isFindCountNumbers;
