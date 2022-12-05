@@ -21,3 +21,7 @@ https://asciinema.org/a/i8tXvq55pySscp7WHeMOZHgTX
 ```bash
 https://asciinema.org/a/sj8DN8k4ZzFf291wjapcJ3toa
 ```
+## brain-progression:
+```bash
+https://asciinema.org/a/Cna6QblObiHA62LNmbEqox6Mj
+```
