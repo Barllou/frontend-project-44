@@ -14,6 +14,9 @@ const isGamesLogic = (userValue, uniqValue, userName, iter, nameGame) => {
   } else if (userValue !== uniqValue && nameGame === 'brain-progression') {
     console.log(`${userValue} is wrong answer ;(. Correct answer was ${uniqValue}. \nLet's try again, ${userName}!`);
     return false;
+  } else if (userValue !== uniqValue && nameGame === 'brain-prime') {
+    console.log(`${userValue} is wrong answer ;(. Correct answer was ${uniqValue}. \nLet's try again, ${userName}!`);
+    return false;
   } else if (userValue !== uniqValue && nameGame === 'brain-even') {
     console.log(`Let's try again, ${userName}!`);
     return false;
@@ -40,6 +43,9 @@ const getUserGreeting = (value) => {
       break;
     case 'brain-progression':
       console.log('What number is missing in the progression?');
+      break;
+    case 'brain-prime':
+      console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
       break;
     default:
       break;
