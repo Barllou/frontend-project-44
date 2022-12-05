@@ -28,6 +28,7 @@ const isGamesLogic = (userValue, uniqValue, userName, iter, nameGame) => {
 
 // Знакомство, правила и приветствие пользователя.
 const getUserGreeting = (value) => {
+  console.log('Welcome to the Brain Games!');
   const nameUser = getUserName();
 
   switch (value) {
@@ -59,12 +60,13 @@ const getUserResponse = (value) => {
 };
 
 // Приветствие пользователя brain-games.js (не удалять!)
-/* const welcomeFunction = () => {
+const welcomeFunction = () => {
   console.log('Welcome to the Brain Games!');
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello ${userName}!`);
-}; */
+};
 
 module.exports.getUserGreeting = getUserGreeting;
 module.exports.getUserResponse = getUserResponse;
+module.exports.welcomeFunction = welcomeFunction;
 module.exports.isGamesLogic = isGamesLogic;
