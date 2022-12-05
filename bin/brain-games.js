@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-const { welcomeFunction } = require('../src/index.js');
+const { getUserName } = require('../src/cli.js');
 
-welcomeFunction();
+getUserName();
