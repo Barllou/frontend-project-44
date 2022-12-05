@@ -3,6 +3,11 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/d075fbf0ec5b532095aa/maintainability)](https://codeclimate.com/github/Barllou/frontend-project-44/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/d075fbf0ec5b532095aa/test_coverage)](https://codeclimate.com/github/Barllou/frontend-project-44/test_coverage)
 
+# Project description
+```bash
+The project consists of five games
+```
+
 # Aesiinema link
 
 ## brain-even: 
