@@ -5,7 +5,16 @@
 
 # Project description
 ```bash
-The project consists of five games
+The project consists of five games:
+I. Game: "Parity check"
+II. Game: "Calculator"
+III. Game "GCD"
+IV. Game "Arithmetic progression"
+V. Game "Is it a prime number?"
+```
+# Setup
+```bash
+Make install
 ```
 
 # Aesiinema link
