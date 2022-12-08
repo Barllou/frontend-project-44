@@ -20,15 +20,14 @@ Make install
 # Launch games
 ```bash
 make _name game_ or...
-brain-*name game*
+brain-'name game'
 
-__gameList = {
-    name: even,
-    name: calc,
-    name: gcd,
-    name: progression, (for make -progr_)
-    name: prime
-};__
+gameList:
+   - even
+   - calc
+   - cd
+   - progression (for make 'progr')
+   - prime
 ```
 
 # Aesiinema link
