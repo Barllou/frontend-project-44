@@ -19,7 +19,7 @@ Make install
 # Launch games
 ```bash
 make _name game_ or...
-brain-_name game_
+brain-*name game*
 
 __gameList = {
     name: even,
