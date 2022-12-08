@@ -5,8 +5,7 @@ const isGamesLogic = (rulesGame, uniqLogic, step = 3) => {
   console.log('Welcome to the Brain Games!');
 
   const name = readlineSync.question('May I have your name? ');
-  console.log(`Hello, ${name}!`);
-  console.log(rulesGame);
+  console.log(`Hello, ${name}! \n${rulesGame}`);
 
   for (let i = 1; i <= step; i += 1) {
     const uniqLogicGame = uniqLogic();
@@ -19,8 +18,7 @@ const isGamesLogic = (rulesGame, uniqLogic, step = 3) => {
     if (userResponse === uniqResult) {
       console.log('Correct!');
     } else {
-      console.log(`'${userResponse}' is wrong answer ;(. Correct answer was '${uniqResult}'.`);
-      console.log(`Let's try again, ${name}!`);
+      console.log(`'${userResponse}' is wrong answer ;(. Correct answer was '${uniqResult}. \nLet's try again, ${name}!`);
       break;
     }
     if (i === step) {
