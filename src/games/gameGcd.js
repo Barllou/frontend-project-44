@@ -8,7 +8,7 @@ const getGreatestCommonDivisor = () => {
     const firstNum = getRandomNumber(10);
     const secondNum = getRandomNumber(10);
     const iterValue = firstNum < secondNum ? secondNum : firstNum;
-    const question = (firstNum < secondNum) ? `Question: ${firstNum} ${secondNum}` : `Question: ${secondNum} ${firstNum}`;
+    const question = (firstNum < secondNum) ? `${firstNum} ${secondNum}` : `${secondNum} ${firstNum}`;
     const gcdNum = greatesCommonDivisor(firstNum, secondNum, iterValue);
     return [question, gcdNum];
   };

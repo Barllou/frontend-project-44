@@ -15,7 +15,7 @@ const isGamesLogic = (rulesGame, uniqLogic) => {
     console.log(`Question: ${questionAndResult[0]}`);
     const userResponse = readlineSync.question('Your answer: ');
 
-    if (userResponse === questionAndResult[1]) {
+    if (userResponse == questionAndResult[1]) {
       console.log('Correct!');
     } else {
       console.log(`'${userResponse}' is wrong answer ;(. Correct answer was '${questionAndResult[1]}'.`);
