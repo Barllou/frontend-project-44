@@ -16,6 +16,19 @@ V. Game "Is it a prime number?"
 ```bash
 Make install
 ```
+# Launch games
+```bash
+Make [name game] or...
+brain-[name game]
+
+const gameList = {
+    name: even,
+    name: calc,
+    name: gcd,
+    name: progression, (for make [progr])
+    name: prime
+};
+```
 
 # Aesiinema link
 
