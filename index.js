@@ -28,6 +28,7 @@ const isGamesLogic = (rulesGame, uniqLogic) => {
   }
 };
 
+
 // Приветствие пользователя brain-games.js (не удалять!)
 const welcomeFunction = () => {
   console.log('Welcome to the Brain Games!');
