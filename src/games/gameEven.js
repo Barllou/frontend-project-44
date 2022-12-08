@@ -4,13 +4,13 @@ const { getRandomNumber } = require('../randomNumber.js');
 const isFindEvenNumber = () => {
   const rulesGame = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-  const primeNumberUniqLogic = () => {
+  const evenNumberUniqLogic = () => {
     const randomNum = getRandomNumber(10);
     const question = randomNum;
     const parity = randomNum % 2 === 0 ? 'yes' : 'no';
     return [question, parity];
   };
-  generalGameLogic.isGamesLogic(rulesGame, primeNumberUniqLogic);
+  generalGameLogic.isGamesLogic(rulesGame, evenNumberUniqLogic);
 };
 
 module.exports.isFindEvenNumber = isFindEvenNumber;
