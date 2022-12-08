@@ -18,16 +18,16 @@ Make install
 ```
 # Launch games
 ```bash
-Make [name game] or...
-brain-[name game]
+make _name game_ or...
+brain-_name game_
 
-const gameList = {
+__gameList = {
     name: even,
     name: calc,
     name: gcd,
-    name: progression, (for make [progr])
+    name: progression, (for make -progr_)
     name: prime
-};
+};__
 ```
 
 # Aesiinema link
