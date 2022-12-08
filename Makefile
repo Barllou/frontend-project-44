@@ -11,4 +11,19 @@ lint:
 	npx eslint .
 
 rec:
-	asciinema rec  
+	asciinema rec
+
+calc:
+	brain-calc  
+
+even:
+	brain-even
+
+gcd:
+	brain-gcd 
+
+prime:
+	brain-prime
+
+progr:
+	brain-progression     	  
