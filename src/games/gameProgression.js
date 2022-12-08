@@ -2,15 +2,14 @@ const generalGameLogic = require('../index.js');
 const { generateArithmeticProgression } = require('../generateArithmeticProgression.js');
 
 const isArithmeticProgression = () => {
-  const nameUser = generalGameLogic.getUserGreeting('brain-progression');
-  for (let i = 1; i <= 3; i += 1) {
+  const rulesGame = 'What number is missing in the progression?';
+  const primeNumberUniqLogic = () => {
     const stringAndHiddenNum = generateArithmeticProgression();
-    const userResponse = generalGameLogic.getUserResponse(`Question: ${stringAndHiddenNum[0]}`);
-    const resultOutput = generalGameLogic.isGamesLogic(userResponse, stringAndHiddenNum[1], nameUser, i, 'brain-progression');
-    if (resultOutput === false) {
-      break;
-    }
-  }
+    const stringArithmProgr = stringAndHiddenNum[0];
+    const hiddenNum = stringAndHiddenNum[1];
+    return [stringArithmProgr, hiddenNum];
+  };
+  generalGameLogic.isGamesLogic(rulesGame, primeNumberUniqLogic);
 };
 
 module.exports.isArithmeticProgression = isArithmeticProgression;

@@ -2,18 +2,15 @@ const generalGameLogic = require('../index.js');
 const { getRandomNumber } = require('../randomNumber.js');
 
 const isFindEvenNumber = () => {
-  const nameUser = generalGameLogic.getUserGreeting('brain-even');
+  const rulesGame = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-  for (let i = 1; i <= 3; i += 1) {
+  const primeNumberUniqLogic = () => {
     const randomNum = getRandomNumber(10);
-    const userResponse = generalGameLogic.getUserResponse(`Question: ${randomNum}`);
+    const question = randomNum;
     const parity = randomNum % 2 === 0 ? 'yes' : 'no';
-
-    const resultOutput = generalGameLogic.isGamesLogic(userResponse, parity, nameUser, i, 'brain-even');
-    if (resultOutput === false) {
-      break;
-    }
-  }
+    return [question, parity];
+  };
+  generalGameLogic.isGamesLogic(rulesGame, primeNumberUniqLogic);
 };
 
 module.exports.isFindEvenNumber = isFindEvenNumber;
