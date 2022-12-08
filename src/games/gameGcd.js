@@ -1,4 +1,4 @@
-const generalGameLogic = require('../index.js');
+const generalGameLogic = require('../../index.js');
 const { getRandomNumber } = require('../randomNumber.js');
 const { greatesCommonDivisor } = require('../greatesCommonDivisor.js');
 

@@ -1,4 +1,4 @@
-const generalGameLogic = require('../index.js');
+const generalGameLogic = require('../../index.js');
 const { generateArithmeticProgression } = require('../generateArithmeticProgression.js');
 
 const isArithmeticProgression = () => {
