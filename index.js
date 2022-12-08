@@ -6,19 +6,20 @@ const isGamesLogic = (rulesGame, uniqLogic, step = 3) => {
 
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!`);
-
   console.log(rulesGame);
 
   for (let i = 1; i <= step; i += 1) {
-    const questionAndResult = uniqLogic();
+    const uniqLogicGame = uniqLogic();
+    const question = uniqLogicGame[0];
+    const uniqResult = uniqLogicGame[1];
 
-    console.log(`Question: ${questionAndResult[0]}`);
+    console.log(`Question: ${question}`);
     const userResponse = readlineSync.question('Your answer: ');
 
-    if (userResponse === questionAndResult[1]) {
+    if (userResponse === uniqResult) {
       console.log('Correct!');
     } else {
-      console.log(`'${userResponse}' is wrong answer ;(. Correct answer was '${questionAndResult[1]}'.`);
+      console.log(`'${userResponse}' is wrong answer ;(. Correct answer was '${uniqResult}'.`);
       console.log(`Let's try again, ${name}!`);
       break;
     }
