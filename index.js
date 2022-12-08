@@ -18,7 +18,7 @@ const isGamesLogic = (rulesGame, uniqLogic, step = 3) => {
     if (userResponse === uniqResult) {
       console.log('Correct!');
     } else {
-      console.log(`'${userResponse}' is wrong answer ;(. Correct answer was '${uniqResult}. \nLet's try again, ${name}!`);
+      console.log(`${userResponse} is wrong answer ;(. Correct answer was '${uniqResult}. \nLet's try again, ${name}!`);
       break;
     }
     if (i === step) {
