@@ -19,13 +19,13 @@ Make install
 ```
 # Launch games
 ```bash
-make _name game_ or...
+make 'name game' or...
 brain-'name game'
 
 gameList:
    - even
    - calc
-   - cd
+   - gcd
    - progression (for make 'progr')
    - prime
 ```
