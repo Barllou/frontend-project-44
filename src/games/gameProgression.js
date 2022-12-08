@@ -7,7 +7,7 @@ const isArithmeticProgression = () => {
     const stringAndHiddenNum = generateArithmeticProgression();
     const stringArithmProgr = stringAndHiddenNum[0];
     const hiddenNum = stringAndHiddenNum[1];
-    return [stringArithmProgr, hiddenNum];
+    return [stringArithmProgr, String(hiddenNum)];
   };
   generalGameLogic.isGamesLogic(rulesGame, primeNumberUniqLogic);
 };
