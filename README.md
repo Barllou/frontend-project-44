@@ -1,6 +1,6 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/Barllou/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/Barllou/frontend-project-44/actions)
-[![Maintainability](https://api.codeclimate.com/v1/badges/d075fbf0ec5b532095aa/maintainability)](https://codeclimate.com/github/Barllou/frontend-project-44/maintainability) /br
+[![Maintainability](https://api.codeclimate.com/v1/badges/d075fbf0ec5b532095aa/maintainability)](https://codeclimate.com/github/Barllou/frontend-project-44/maintainability)
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%fbec5d&lines=Hexlet+cool+school+student+=^.^=)](https://git.io/typing-svg)
 
 # Project description
@@ -34,9 +34,8 @@ gameList:
 # Aesiinema link
 
 ## brain-even: 
-```bash
-https://asciinema.org/a/LuTV5ONzUpKvGnrs2MY0f1rQj
-```
+<a href = "https://asciinema.org/a/LuTV5ONzUpKvGnrs2MY0f1rQj"  target="_blank" ><img src = "https://asciinema.org/a/LuTV5ONzUpKvGnrs2MY0f1rQj.svg" width=100%  height=200px></a>
+
 ## brain-calc: 
 ```bash
 https://asciinema.org/a/KyscLlbOSvHqdqpqN0yLcsUv6
