@@ -24,6 +24,14 @@ const isPrimeNumber = (num) => {
   return 'yes';
 };
 
+const getRandomNumber = (end = 100) => Math.floor(Math.random() * end) + 1;
+
+const getRandomNumberFromRange = (min, max) => {
+  const minValue = Math.ceil(min);
+  const maxValue = Math.floor(max);
+  return Math.floor(Math.random() * (maxValue - minValue + 1)) + minValue;
+};
+
 const generateArithmeticProgression = () => {
   let arithmProgStr = '';
   let count = 1;
@@ -44,12 +52,6 @@ const generateArithmeticProgression = () => {
   return [arithmProgStr, hiddenNum];
 };
 
-const getRandomNumberFromRange = (min, max) => {
-  const minValue = Math.ceil(min);
-  const maxValue = Math.floor(max);
-  return Math.floor(Math.random() * (maxValue - minValue + 1)) + minValue;
-}
-
 const getGreatesCommonDivisor = (firstNum, secondNum, iter) => {
   let gcdNum = 1;
   for (let j = 2; j <= iter; j += 1) {
@@ -60,6 +62,11 @@ const getGreatesCommonDivisor = (firstNum, secondNum, iter) => {
   return gcdNum;
 };
 
-const getRandomNumber = (end = 100) => Math.floor(Math.random() * end) + 1;
-
-export { getCountExample, getRandomNumber, isPrimeNumber, generateArithmeticProgression, getRandomNumberFromRange, getGreatesCommonDivisor };
+export {
+  getCountExample,
+  getRandomNumber,
+  isPrimeNumber,
+  generateArithmeticProgression,
+  getRandomNumberFromRange,
+  getGreatesCommonDivisor,
+};
