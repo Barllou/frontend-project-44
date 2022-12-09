@@ -1,6 +1,6 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/Barllou/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/Barllou/frontend-project-44/actions)
-[![Maintainability](https://api.codeclimate.com/v1/badges/d075fbf0ec5b532095aa/maintainability)](https://codeclimate.com/github/Barllou/frontend-project-44/maintainability)
+[![Maintainability](https://api.codeclimate.com/v1/badges/d075fbf0ec5b532095aa/maintainability)](https://codeclimate.com/github/Barllou/frontend-project-44/maintainability) /br
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%fbec5d&lines=Hexlet+cool+school+student+=^.^=)](https://git.io/typing-svg)
 
 # Project description
