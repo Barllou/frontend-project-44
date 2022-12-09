@@ -13,9 +13,9 @@ V. Game "Is it a prime number?"
 ```
 # Setup
 ```bash
-$git clone https://github.com/Barllou/frontend-project-44.git
-$cd frontend-project-44
-$make install
+$ git clone https://github.com/Barllou/frontend-project-44.git
+$ cd frontend-project-44
+$ make install
 ```
 # Launch games
 ```bash
