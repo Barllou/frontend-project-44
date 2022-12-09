@@ -30,8 +30,7 @@ gameList:
    - prime
 ```
 
-## Asciinema video
-
+# Asciinema video
 ```
 $ brain-even
 ```
