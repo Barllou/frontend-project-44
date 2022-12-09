@@ -1,13 +1,13 @@
-const readlineSync = require('readline-sync');
+import readlineSync from 'readline-sync';
 
 // Общая логика игры
-const isGamesLogic = (rulesGame, uniqLogic, step = 3) => {
+const gamesLogic = (rulesGame, uniqLogic, NUMBER_ROUND = 3) => {
   console.log('Welcome to the Brain Games!');
 
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}! \n${rulesGame}`);
 
-  for (let i = 1; i <= step; i += 1) {
+  for (let i = 1; i <= NUMBER_ROUND; i += 1) {
     const uniqLogicGame = uniqLogic();
     const question = uniqLogicGame[0];
     const uniqResult = uniqLogicGame[1];
@@ -21,7 +21,7 @@ const isGamesLogic = (rulesGame, uniqLogic, step = 3) => {
       console.log(`${userResponse} is wrong answer ;(. Correct answer was '${uniqResult}. \nLet's try again, ${name}!`);
       break;
     }
-    if (i === step) {
+    if (i === NUMBER_ROUND) {
       console.log(`Congratulations, ${name}!`);
     }
   }
@@ -34,5 +34,4 @@ const welcomeFunction = () => {
   console.log(`Hello, ${userName}!`);
 };
 
-module.exports.welcomeFunction = welcomeFunction;
-module.exports.isGamesLogic = isGamesLogic;
+export { welcomeFunction, gamesLogic };

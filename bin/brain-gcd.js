@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-const { getGreatestCommonDivisor } = require('../src/games/gameGcd.js');
+import runGreatestCommonDivisor from '../src/games/gameGcd.js';
 
-getGreatestCommonDivisor();
+runGreatestCommonDivisor();

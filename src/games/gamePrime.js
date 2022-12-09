@@ -1,17 +1,16 @@
-const generalGameLogic = require('../../index.js');
-const { getRandomNumber } = require('../randomNumber.js');
-const { primeNumber } = require('../primeNumber.js');
+import { gamesLogic } from '../../index.js';
+import { getRandomNumber, isPrimeNumber } from '../utils.js';
 
-const isPrimeNumber = () => {
-  const rulesGame = 'Answer "yes" if given number is prime. Otherwise answer "no".';
-
-  const primeNumberUniqLogic = () => {
-    const randomNumber = getRandomNumber(10);
-    const primeNum = primeNumber(randomNumber);
-    const question = randomNumber;
+const primeNumberUniqLogic = () => {
+    const RANDOM_VALUE = getRandomNumber(10);
+    const primeNum = isPrimeNumber(RANDOM_VALUE);
+    const question = RANDOM_VALUE;
     return [question, primeNum];
   };
-  generalGameLogic.isGamesLogic(rulesGame, primeNumberUniqLogic);
+
+const runPrimeNumber = () => {
+  const rulesGame = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+  gamesLogic(rulesGame, primeNumberUniqLogic);
 };
 
-module.exports.isPrimeNumber = isPrimeNumber;
+export default runPrimeNumber;

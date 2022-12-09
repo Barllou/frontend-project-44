@@ -1,18 +1,18 @@
-const generalGameLogic = require('../../index.js');
-const { getRandomNumber } = require('../randomNumber.js');
-const { greatesCommonDivisor } = require('../greatesCommonDivisor.js');
+import { gamesLogic } from '../../index.js';
+import { getRandomNumber, getGreatesCommonDivisor } from '../utils.js';
 
-const getGreatestCommonDivisor = () => {
-  const rulesGame = 'Find the greatest common divisor of given numbers.';
-  const gcdUniqLogic = () => {
-    const firstNum = getRandomNumber(10);
-    const secondNum = getRandomNumber(10);
-    const iterValue = firstNum < secondNum ? secondNum : firstNum;
-    const question = (firstNum < secondNum) ? `${firstNum} ${secondNum}` : `${secondNum} ${firstNum}`;
-    const gcdNum = greatesCommonDivisor(firstNum, secondNum, iterValue);
-    return [question, String(gcdNum)];
-  };
-  generalGameLogic.isGamesLogic(rulesGame, gcdUniqLogic);
+const gcdUniqLogic = () => {
+  const RANDOM_FIRST_VALUE = getRandomNumber(10);
+  const RANDOM_SECOND_VALUE = getRandomNumber(10);
+  const iterValue = RANDOM_FIRST_VALUE < RANDOM_SECOND_VALUE ? RANDOM_SECOND_VALUE : RANDOM_FIRST_VALUE;
+  const question = (RANDOM_FIRST_VALUE < RANDOM_SECOND_VALUE) ? `${RANDOM_FIRST_VALUE} ${RANDOM_SECOND_VALUE}` : `${RANDOM_SECOND_VALUE} ${RANDOM_FIRST_VALUE}`;
+  const gcdNum = getGreatesCommonDivisor(RANDOM_FIRST_VALUE, RANDOM_SECOND_VALUE, iterValue);
+  return [question, String(gcdNum)];
 };
 
-module.exports.getGreatestCommonDivisor = getGreatestCommonDivisor;
+const runGreatestCommonDivisor = () => {
+  const rulesGame = 'Find the greatest common divisor of given numbers.';
+  gamesLogic(rulesGame, gcdUniqLogic);
+};
+
+export default runGreatestCommonDivisor;

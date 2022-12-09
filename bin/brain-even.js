@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-const { isFindEvenNumber } = require('../src/games/gameEven.js');
+import runFindEvenNumber from '../src/games/gameEven.js';
 
-isFindEvenNumber();
+runFindEvenNumber();

@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-const { welcomeFunction } = require('../index.js');
+import { welcomeFunction } from '../index.js';
 
 welcomeFunction();

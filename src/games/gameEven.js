@@ -1,16 +1,16 @@
-const generalGameLogic = require('../../index.js');
-const { getRandomNumber } = require('../randomNumber.js');
+import { gamesLogic } from '../../index.js';
+import { getRandomNumber } from '../utils.js';
 
-const isFindEvenNumber = () => {
-  const rulesGame = 'Answer "yes" if the number is even, otherwise answer "no".';
-
-  const evenNumberUniqLogic = () => {
-    const randomNum = getRandomNumber(10);
-    const question = randomNum;
-    const parity = randomNum % 2 === 0 ? 'yes' : 'no';
-    return [question, parity];
-  };
-  generalGameLogic.isGamesLogic(rulesGame, evenNumberUniqLogic);
+const evenNumberUniqLogic = () => {
+  const RANDOM_VALUE = getRandomNumber(10);
+  const question = RANDOM_VALUE;
+  const parity = RANDOM_VALUE % 2 === 0 ? 'yes' : 'no';
+  return [question, parity];
 };
 
-module.exports.isFindEvenNumber = isFindEvenNumber;
+const runFindEvenNumber = () => {
+  const rulesGame = 'Answer "yes" if the number is even, otherwise answer "no".';
+  gamesLogic(rulesGame, evenNumberUniqLogic);
+};
+
+export default runFindEvenNumber;

@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-const { isFindCountNumbers } = require('../src/games/gameCalc.js');
+import runFindCountNumbers from '../src/games/gameCalc.js';
 
-isFindCountNumbers();
+runFindCountNumbers();
