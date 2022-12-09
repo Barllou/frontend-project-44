@@ -32,9 +32,10 @@ gameList:
 ```
 
 # Aesiinema link
-
-## brain-even: 
-<a href = "https://asciinema.org/a/LuTV5ONzUpKvGnrs2MY0f1rQj"  target="_blank" ><img src = "https://asciinema.org/a/LuTV5ONzUpKvGnrs2MY0f1rQj.svg" width=100%  height=200px></a>
+```
+$ brain-even: 
+```
+<a href = "https://asciinema.org/a/LuTV5ONzUpKvGnrs2MY0f1rQj" target="_blank"><img src = "https://asciinema.org/a/LuTV5ONzUpKvGnrs2MY0f1rQj.svg" width=100% height=200px></a>
 
 ## brain-calc: 
 ```bash
