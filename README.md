@@ -45,7 +45,7 @@ $ brain-calc:
 ```
 $ brain-gcd:
 ``` 
-<a href = "ttps://asciinema.org/a/i8tXvq55pySscp7WHeMOZHgTX" target="_blank"><img src = "ttps://asciinema.org/a/i8tXvq55pySscp7WHeMOZHgTX.svg" width=100% height=200px></a>
+<a href = "https://asciinema.org/a/i8tXvq55pySscp7WHeMOZHgTX" target="_blank"><img src = "https://asciinema.org/a/i8tXvq55pySscp7WHeMOZHgTX.svg" width=100% height=200px></a>
 
 ```
 $ brain-progression:
