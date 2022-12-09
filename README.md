@@ -31,22 +31,27 @@ gameList:
 ```
 
 <h1>Asciinema video</h1>
+
 ```
 $ brain-even:
 ``` 
 <a href = "https://asciinema.org/a/LuTV5ONzUpKvGnrs2MY0f1rQj" target="_blank"><img src = "https://asciinema.org/a/LuTV5ONzUpKvGnrs2MY0f1rQj.svg" width=100% height=200px></a>
+
 ```
 $ brain-calc:
 ``` 
 <a href = "https://asciinema.org/a/KyscLlbOSvHqdqpqN0yLcsUv6" target="_blank"><img src = "https://asciinema.org/a/KyscLlbOSvHqdqpqN0yLcsUv6.svg" width=100% height=200px></a>
+
 ```
 $ brain-gcd:
 ``` 
 <a href = "https://asciinema.org/a/i8tXvq55pySscp7WHeMOZHgTX" target="_blank"><img src = "https://asciinema.org/a/i8tXvq55pySscp7WHeMOZHgTX.svg" width=100% height=200px></a>
+
 ```
 $ brain-progression:
 ``` 
 <a href = "https://asciinema.org/a/sj8DN8k4ZzFf291wjapcJ3toa" target="_blank"><img src = "https://asciinema.org/a/sj8DN8k4ZzFf291wjapcJ3toa.svg" width=100% height=200px></a>
+
 ```
 $ brain-prime:
 ``` 
