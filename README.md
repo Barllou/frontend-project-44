@@ -33,38 +33,27 @@ gameList:
 
 # Aesiinema link
 ```
-$ brain-even
-```
-<a href = "https://asciinema.org/a/XtYOOmRTiBZSEtdWK19OxC68p"  target="_blank" ><img src = "https://asciinema.org/a/XtYOOmRTiBZSEtdWK19OxC68p.svg" width=100%  height=200px></a>
-
+$ brain-even:
+``` 
+<a href = "https://asciinema.org/a/LuTV5ONzUpKvGnrs2MY0f1rQj" target="_blank"><img src = "https://asciinema.org/a/LuTV5ONzUpKvGnrs2MY0f1rQj.svg" width=100% height=300px></a>
 <h2>Brain Calc</h2>
-<p>What is the result of the expression?</p>
 
 ```
-$ brain-calc
-```
-<a href = "https://asciinema.org/a/oeTkCTyzCOQfLHGz9vMVv67wV"  target="_blank" ><img src = "https://asciinema.org/a/oeTkCTyzCOQfLHGz9vMVv67wV.svg" width=100%  height=200px></a>
-
-<h2>Brain GCD</h2>
-<p>Find the greatest common divisor of given numbers.</p>
+$ brain-calc:
+``` 
+<a href = "https://asciinema.org/a/KyscLlbOSvHqdqpqN0yLcsUv6" target="_blank"><img src = "https://asciinema.org/a/KyscLlbOSvHqdqpqN0yLcsUv6.svg" width=100% height=300px></a>
 
 ```
-$ brain-gcd
-```
-<a href = "https://asciinema.org/a/DWBqT1fubOyTLNKTiZbfjcNTw"  target="_blank" ><img src = "https://asciinema.org/a/DWBqT1fubOyTLNKTiZbfjcNTw.svg" width=100%  height=200px></a>
-
-<h2>Brain Prime</h2>
-<p>Answer "yes" if given number is prime. Otherwise answer "no".</p>
+$ brain-gcd:
+``` 
+<a href = "https://asciinema.org/a/i8tXvq55pySscp7WHeMOZHgTX" target="_blank"><img src = "https://asciinema.org/a/i8tXvq55pySscp7WHeMOZHgTX.svg" width=100% height=300px></a>
 
 ```
-$ brain-prime
-```
-<a href = "https://asciinema.org/a/3k5HVZkeeCq6JFrEbKgFSOLE1"  target="_blank" ><img src = "https://asciinema.org/a/3k5HVZkeeCq6JFrEbKgFSOLE1.svg" width=100%  height=200px></a>
-
-<h2>Brain Progression</h2>
-<p>Answer "yes" if given number is prime. Otherwise answer "no".</p>
+$ brain-progression:
+``` 
+<a href = "https://asciinema.org/a/sj8DN8k4ZzFf291wjapcJ3toa" target="_blank"><img src = "https://asciinema.org/a/sj8DN8k4ZzFf291wjapcJ3toa.svg" width=100% height=300px></a>
 
 ```
-$ brain-progression
-```
-<a href = "https://asciinema.org/a/CEOimwvovlTkK35qOfWRv1LYB"  target="_blank" ><img src = "https://asciinema.org/a/CEOimwvovlTkK35qOfWRv1LYB.svg" width=100%  height=200px></a>
+$ brain-prime:
+``` 
+<a href = "https://asciinema.org/a/Cna6QblObiHA62LNmbEqox6Mj" target="_blank"><img src = "https://asciinema.org/a/Cna6QblObiHA62LNmbEqox6Mj.svg" width=100% height=300px></a>
