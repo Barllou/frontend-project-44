@@ -1,3 +1,4 @@
+// Вычисление уравнения для gameCalc.js.
 const getCountExample = (firstNum, secondNum, sign) => {
   switch (sign) {
     case '+':
@@ -12,6 +13,7 @@ const getCountExample = (firstNum, secondNum, sign) => {
   return 'false';
 };
 
+// Узнать, простое число или нет.
 const isPrimeNumber = (num) => {
   if (num === 1) {
     return 'no';
@@ -24,14 +26,17 @@ const isPrimeNumber = (num) => {
   return 'yes';
 };
 
+// Получить случайное число.
 const getRandomNumber = (end = 100) => Math.floor(Math.random() * end) + 1;
 
+// Получить случайное число из выбранного диапазона.
 const getRandomNumberFromRange = (min, max) => {
   const minValue = Math.ceil(min);
   const maxValue = Math.floor(max);
   return Math.floor(Math.random() * (maxValue - minValue + 1)) + minValue;
 };
 
+// Получить строку арифметической прогрессии для gameProgression.js.
 const generateArithmeticProgression = () => {
   let arithmProgStr = '';
   let count = 1;
@@ -52,6 +57,7 @@ const generateArithmeticProgression = () => {
   return [arithmProgStr, hiddenNum];
 };
 
+// Получить наибольший общий делитель числа для gameGcd.js.
 const getGreatesCommonDivisor = (firstNum, secondNum, iter) => {
   let gcdNum = 1;
   for (let j = 2; j <= iter; j += 1) {
