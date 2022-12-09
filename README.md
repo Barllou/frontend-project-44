@@ -33,14 +33,15 @@ gameList:
 
 # Aesiinema link
 ```
-## brain-even:
+$ brain-even:
 ``` 
 <a href = "https://asciinema.org/a/LuTV5ONzUpKvGnrs2MY0f1rQj" target="_blank"><img src = "https://asciinema.org/a/LuTV5ONzUpKvGnrs2MY0f1rQj.svg" width=100% height=200px></a>
 
-## brain-calc: 
-```bash
-https://asciinema.org/a/KyscLlbOSvHqdqpqN0yLcsUv6
 ```
+$ brain-calc:
+``` 
+<a href = "https://asciinema.org/a/KyscLlbOSvHqdqpqN0yLcsUv6" target="_blank"><img src = "https://asciinema.org/a/KyscLlbOSvHqdqpqN0yLcsUv6.svg" width=100% height=200px></a>
+
 ## brain-gcd:
 ```bash
 https://asciinema.org/a/i8tXvq55pySscp7WHeMOZHgTX
