@@ -1,7 +1,7 @@
 import { gamesLogic } from '../../index.js';
 import { getRandomNumber, getCountExample } from '../utils.js';
 
-const countNumberUniqLogic = () => {
+const generateUniqGameData = () => {
   const symbolArr = ['+', '-', '*'];
   const RANDOM_FIRST_VALUE = getRandomNumber(10);
   const RANDOM_SECOND_VALUE = getRandomNumber(10);
@@ -13,7 +13,7 @@ const countNumberUniqLogic = () => {
 
 const runFindCountNumbers = () => {
   const rulesGame = 'What is the result of the expression?';
-  gamesLogic(rulesGame, countNumberUniqLogic);
+  gamesLogic(rulesGame, generateUniqGameData);
 };
 
 export default runFindCountNumbers;

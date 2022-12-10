@@ -1,7 +1,7 @@
 import { gamesLogic } from '../../index.js';
 import { getRandomNumber, isPrimeNumber } from '../utils.js';
 
-const primeNumberUniqLogic = () => {
+const generateUniqGameData = () => {
   const RANDOM_VALUE = getRandomNumber(10);
   const primeNum = isPrimeNumber(RANDOM_VALUE);
   const question = RANDOM_VALUE;
@@ -10,7 +10,7 @@ const primeNumberUniqLogic = () => {
 
 const runPrimeNumber = () => {
   const rulesGame = 'Answer "yes" if given number is prime. Otherwise answer "no".';
-  gamesLogic(rulesGame, primeNumberUniqLogic);
+  gamesLogic(rulesGame, generateUniqGameData);
 };
 
 export default runPrimeNumber;

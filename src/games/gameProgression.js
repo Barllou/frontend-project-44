@@ -1,7 +1,7 @@
 import { gamesLogic } from '../../index.js';
 import { generateArithmeticProgression } from '../utils.js';
 
-const arithmeticProgressionUniqLogic = () => {
+const generateUniqGameData = () => {
   const stringAndHiddenNum = generateArithmeticProgression();
   const stringArithmeticProgression = stringAndHiddenNum[0];
   const hiddenNum = stringAndHiddenNum[1];
@@ -10,7 +10,7 @@ const arithmeticProgressionUniqLogic = () => {
 
 const runArithmeticProgression = () => {
   const rulesGame = 'What number is missing in the progression?';
-  gamesLogic(rulesGame, arithmeticProgressionUniqLogic);
+  gamesLogic(rulesGame, generateUniqGameData);
 };
 
 export default runArithmeticProgression;

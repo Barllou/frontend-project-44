@@ -38,7 +38,7 @@ const getRandomNumberFromRange = (min, max) => {
 
 // Получить строку арифметической прогрессии для gameProgression.js.
 const generateArithmeticProgression = () => {
-  let arithmProgStr = '';
+  let arithmeticProgressionString = '';
   let count = 1;
   let hiddenNum;
   const iter = getRandomNumberFromRange(5, 10);
@@ -46,15 +46,15 @@ const generateArithmeticProgression = () => {
   const incrementStep = getRandomNumberFromRange(1, 10);
   for (let j = getRandomNumber(); count <= iter; j += incrementStep) {
     if (replaceNum === count) {
-      arithmProgStr += '.. ';
+      arithmeticProgressionString += '.. ';
       hiddenNum = j;
       count += 1;
     } else {
-      arithmProgStr += `${j} `;
+      arithmeticProgressionString += `${j} `;
       count += 1;
     }
   }
-  return [arithmProgStr, hiddenNum];
+  return [arithmeticProgressionString, hiddenNum];
 };
 
 // Получить наибольший общий делитель числа для gameGcd.js.
