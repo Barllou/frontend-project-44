@@ -37,7 +37,7 @@ const getRandomNumberFromRange = (min, max) => {
 };
 
 // Получить строку арифметической прогрессии для gameProgression.js.
-const getGenerateArithmeticProgression = () => {
+const generateArithmeticProgression = () => {
   let arithmeticProgressionString = '';
   let count = 1;
   let hiddenNum;
@@ -78,7 +78,7 @@ export {
   getCountExample,
   getRandomNumber,
   getPrimeNumber,
-  getGenerateArithmeticProgression,
+  generateArithmeticProgression,
   getRandomNumberFromRange,
   getGreatesCommonDivisor,
 };

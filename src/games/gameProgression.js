@@ -1,8 +1,8 @@
 import { gamesLogic } from '../../index.js';
-import { getGenerateArithmeticProgression } from '../utils.js';
+import { generateArithmeticProgression } from '../utils.js';
 
 const generateUniqGameData = () => {
-  const stringAndHiddenNum = getGenerateArithmeticProgression();
+  const stringAndHiddenNum = generateArithmeticProgression();
   const stringArithmeticProgression = stringAndHiddenNum[0];
   const hiddenNum = stringAndHiddenNum[1];
   return [stringArithmeticProgression, String(hiddenNum)];
