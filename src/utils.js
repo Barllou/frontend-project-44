@@ -14,7 +14,7 @@ const getCountExample = (firstNum, secondNum, sign) => {
 };
 
 // Узнать, простое число или нет.
-const isPrimeNumber = (num) => {
+const getPrimeNumber = (num) => {
   if (num === 1) {
     return 'no';
   }
@@ -37,20 +37,25 @@ const getRandomNumberFromRange = (min, max) => {
 };
 
 // Получить строку арифметической прогрессии для gameProgression.js.
-const generateArithmeticProgression = () => {
+const getGenerateArithmeticProgression = () => {
   let arithmeticProgressionString = '';
   let count = 1;
   let hiddenNum;
-  const iter = getRandomNumberFromRange(5, 10);
-  const replaceNum = getRandomNumberFromRange(1, iter);
-  const incrementStep = getRandomNumberFromRange(1, 10);
-  for (let j = getRandomNumber(); count <= iter; j += incrementStep) {
+  const MIN_NUM_ITER = 5;
+  const MAX_NUM_ITER = 10;
+  const MIN_NUM_STEP = 1;
+  const MAX_NUM_STEP = 10;
+  const STATIC_VALUE = 1;
+  const iter = getRandomNumberFromRange(MIN_NUM_ITER, MAX_NUM_ITER);
+  const replaceNum = getRandomNumberFromRange(STATIC_VALUE, iter);
+  const incrementStep = getRandomNumberFromRange(MIN_NUM_STEP, MAX_NUM_STEP);
+  for (let i = getRandomNumber(); count <= iter; i += incrementStep) {
     if (replaceNum === count) {
       arithmeticProgressionString += '.. ';
-      hiddenNum = j;
+      hiddenNum = i;
       count += 1;
     } else {
-      arithmeticProgressionString += `${j} `;
+      arithmeticProgressionString += `${i} `;
       count += 1;
     }
   }
@@ -58,7 +63,8 @@ const generateArithmeticProgression = () => {
 };
 
 // Получить наибольший общий делитель числа для gameGcd.js.
-const getGreatesCommonDivisor = (firstNum, secondNum, iter) => {
+const getGreatesCommonDivisor = (firstNum, secondNum) => {
+  const iter = firstNum < secondNum ? secondNum : firstNum;
   let gcdNum = 1;
   for (let j = 2; j <= iter; j += 1) {
     if (firstNum % j === 0 && secondNum % j === 0) {
@@ -71,8 +77,8 @@ const getGreatesCommonDivisor = (firstNum, secondNum, iter) => {
 export {
   getCountExample,
   getRandomNumber,
-  isPrimeNumber,
-  generateArithmeticProgression,
+  getPrimeNumber,
+  getGenerateArithmeticProgression,
   getRandomNumberFromRange,
   getGreatesCommonDivisor,
 };

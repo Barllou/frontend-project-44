@@ -1,10 +1,11 @@
 import { gamesLogic } from '../../index.js';
-import { getRandomNumber, isPrimeNumber } from '../utils.js';
+import { getRandomNumber, getPrimeNumber } from '../utils.js';
 
 const generateUniqGameData = () => {
-  const RANDOM_VALUE = getRandomNumber(10);
-  const primeNum = isPrimeNumber(RANDOM_VALUE);
-  const question = RANDOM_VALUE;
+  const MAX_NUM_GENERATE = 10;
+  const randomValue = getRandomNumber(MAX_NUM_GENERATE);
+  const primeNum = getPrimeNumber(randomValue);
+  const question = randomValue;
   return [question, primeNum];
 };
 

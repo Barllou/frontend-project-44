@@ -3,11 +3,12 @@ import { getRandomNumber, getCountExample } from '../utils.js';
 
 const generateUniqGameData = () => {
   const symbolArr = ['+', '-', '*'];
-  const RANDOM_FIRST_VALUE = getRandomNumber(10);
-  const RANDOM_SECOND_VALUE = getRandomNumber(10);
+  const MAX_NUM_GENERATE = 10;
+  const randomFirstValue = getRandomNumber(MAX_NUM_GENERATE);
+  const randomSecondValue = getRandomNumber(MAX_NUM_GENERATE);
   const randomSymbol = symbolArr[getRandomNumber(symbolArr.length - 1)];
-  const finishedExample = getCountExample(RANDOM_FIRST_VALUE, RANDOM_SECOND_VALUE, randomSymbol);
-  const question = `${RANDOM_FIRST_VALUE} ${randomSymbol} ${RANDOM_SECOND_VALUE}`;
+  const finishedExample = getCountExample(randomFirstValue, randomSecondValue, randomSymbol);
+  const question = `${randomFirstValue} ${randomSymbol} ${randomSecondValue}`;
   return [question, String(finishedExample)];
 };
 

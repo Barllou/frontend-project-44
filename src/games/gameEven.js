@@ -2,9 +2,10 @@ import { gamesLogic } from '../../index.js';
 import { getRandomNumber } from '../utils.js';
 
 const generateUniqGameData = () => {
-  const RANDOM_VALUE = getRandomNumber(10);
-  const question = RANDOM_VALUE;
-  const parity = RANDOM_VALUE % 2 === 0 ? 'yes' : 'no';
+  const MAX_NUM_GENERATE = 10;
+  const randomValue = getRandomNumber(MAX_NUM_GENERATE);
+  const question = randomValue;
+  const parity = randomValue % 2 === 0 ? 'yes' : 'no';
   return [question, parity];
 };
 

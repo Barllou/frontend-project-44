@@ -2,11 +2,11 @@ import { gamesLogic } from '../../index.js';
 import { getRandomNumber, getGreatesCommonDivisor } from '../utils.js';
 
 const generateUniqGameData = () => {
-  const RANDOM_FIRST_NUM = getRandomNumber(10);
-  const RANDOM_SECOND_NUM = getRandomNumber(10);
-  const iterValue = RANDOM_FIRST_NUM < RANDOM_SECOND_NUM ? RANDOM_SECOND_NUM : RANDOM_FIRST_NUM;
-  const question = (RANDOM_FIRST_NUM < RANDOM_SECOND_NUM) ? `${RANDOM_FIRST_NUM} ${RANDOM_SECOND_NUM}` : `${RANDOM_SECOND_NUM} ${RANDOM_FIRST_NUM}`;
-  const gcdNum = getGreatesCommonDivisor(RANDOM_FIRST_NUM, RANDOM_SECOND_NUM, iterValue);
+  const MAX_NUM_GENERATE = 10;
+  const randomFirstValue = getRandomNumber(MAX_NUM_GENERATE);
+  const randomSecondValue = getRandomNumber(MAX_NUM_GENERATE);
+  const question = (randomFirstValue < randomSecondValue) ? `${randomFirstValue} ${randomSecondValue}` : `${randomSecondValue} ${randomFirstValue}`;
+  const gcdNum = getGreatesCommonDivisor(randomFirstValue, randomSecondValue);
   return [question, String(gcdNum)];
 };
 
