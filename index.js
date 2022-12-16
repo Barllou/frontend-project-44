@@ -9,9 +9,7 @@ const runGamesLogic = (rulesGame, uniqLogic) => {
   console.log(`Hello, ${name}! \n${rulesGame}`);
 
   for (let i = 1; i <= MAX_NUM_ROUND; i += 1) {
-    const uniqLogicGame = uniqLogic();
-    const question = uniqLogicGame[0];
-    const uniqResult = uniqLogicGame[1];
+    const [question, uniqResult] = uniqLogic();
 
     console.log(`Question: ${question}`);
     const userResponse = readlineSync.question('Your answer: ');
