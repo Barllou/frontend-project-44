@@ -1,7 +1,8 @@
 import readlineSync from 'readline-sync';
 
 // Общая логика игры
-const gamesLogic = (rulesGame, uniqLogic, MAX_NUM_ROUND = 3) => {
+const runGamesLogic = (rulesGame, uniqLogic) => {
+  const MAX_NUM_ROUND = 3;
   console.log('Welcome to the Brain Games!');
 
   const name = readlineSync.question('May I have your name? ');
@@ -19,12 +20,10 @@ const gamesLogic = (rulesGame, uniqLogic, MAX_NUM_ROUND = 3) => {
       console.log('Correct!');
     } else {
       console.log(`${userResponse} is wrong answer ;(. Correct answer was '${uniqResult}'. \nLet's try again, ${name}!`);
-      break;
-    }
-    if (i === MAX_NUM_ROUND) {
-      console.log(`Congratulations, ${name}!`);
+      return;
     }
   }
+  console.log(`Congratulations, ${name}!`);
 };
 
 // Приветствие пользователя brain-games.js (не удалять!)
@@ -34,4 +33,4 @@ const welcomeFunction = () => {
   console.log(`Hello, ${userName}!`);
 };
 
-export { welcomeFunction, gamesLogic };
+export { welcomeFunction, runGamesLogic };
