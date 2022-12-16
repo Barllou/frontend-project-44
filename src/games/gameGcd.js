@@ -3,7 +3,7 @@ import getRandomNumber from '../utils.js';
 
 // Получить наибольший общий делитель числа.
 const getGreatesCommonDivisor = (firstNum, secondNum) => {
-  const iter = firstNum < secondNum ? secondNum : firstNum;
+  const iter = Math.max(firstNum, secondNum);
   let gcdNum = 1;
   for (let j = 2; j <= iter; j += 1) {
     if (firstNum % j === 0 && secondNum % j === 0) {
