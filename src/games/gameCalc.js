@@ -1,7 +1,7 @@
 import { runGamesLogic } from '../../index.js';
 import getRandomNumber from '../utils.js';
 
-// Вычисление уравнения.
+// Equation calculation.
 const getCountExample = (firstNum, secondNum, sign) => {
   switch (sign) {
     case '+':

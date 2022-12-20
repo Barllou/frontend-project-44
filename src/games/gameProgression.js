@@ -1,14 +1,14 @@
 import { runGamesLogic } from '../../index.js';
 import getRandomNumber from '../utils.js';
 
-// Получить случайное число из выбранного диапазона.
+// Get a random number from the selected range.
 const getRandomNumberFromRange = (min, max) => {
   const minValue = Math.ceil(min);
   const maxValue = Math.floor(max);
   return Math.floor(Math.random() * (maxValue - minValue + 1)) + minValue;
 };
 
-// Получить строку арифметической прогрессии.
+// Get an arithmetic progression string.
 const generateArithmeticProgression = (firstNum, elemNum, step) => {
   const res = [];
   let count = 1;

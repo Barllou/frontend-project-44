@@ -1,7 +1,7 @@
 import { runGamesLogic } from '../../index.js';
 import getRandomNumber from '../utils.js';
 
-// Узнать, простое число или нет.
+// Find out if a number is prime or not.
 const getPrimeNumber = (num) => {
   if (num === 1) {
     return false;

@@ -1,7 +1,7 @@
 import { runGamesLogic } from '../../index.js';
 import getRandomNumber from '../utils.js';
 
-// Получить наибольший общий делитель числа.
+// Get the greatest common divisor of a number.
 const getGreatesCommonDivisor = (firstNum, secondNum) => {
   const iter = Math.max(firstNum, secondNum);
   let gcdNum = 1;

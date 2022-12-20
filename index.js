@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
 
-// Общая логика игры
+// General game logic
 const runGamesLogic = (rulesGame, uniqLogic) => {
   const MAX_NUM_ROUND = 3;
   console.log('Welcome to the Brain Games!');
@@ -24,7 +24,7 @@ const runGamesLogic = (rulesGame, uniqLogic) => {
   console.log(`Congratulations, ${name}!`);
 };
 
-// Приветствие пользователя brain-games.js (не удалять!)
+// Brain-games.js user greeting (do not delete!)
 const welcomeFunction = () => {
   console.log('Welcome to the Brain Games!');
   const userName = readlineSync.question('May I have your name? ');
