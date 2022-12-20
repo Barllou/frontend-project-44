@@ -1,5 +1,5 @@
 import { runGamesLogic } from '../../index.js';
-import getRandomNumber from '../utils.js';
+import { getRandomNumber } from '../utils.js';
 
 // Equation calculation.
 const getCalculationResult = (firstNum, secondNum, sign) => {

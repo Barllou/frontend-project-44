@@ -1,5 +1,5 @@
 import { runGamesLogic } from '../../index.js';
-import getRandomNumber from '../utils.js';
+import { getRandomNumber } from '../utils.js';
 
 const runFindEvenNumber = () => {
   const generateUniqGameData = () => {
