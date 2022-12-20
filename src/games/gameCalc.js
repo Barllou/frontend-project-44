@@ -25,7 +25,7 @@ const runFindCountNumbers = () => {
     const randomSymbol = operationSigns[getRandomNumber(operationSigns.length - 1)];
     const correctAnswer = getCalculationResult(firstValue, secondValue, randomSymbol);
     const question = `${firstValue} ${randomSymbol} ${secondValue}`;
-    return [question, String(correctAnswerq)];
+    return [question, String(correctAnswer)];
   };
   const rulesGame = 'What is the result of the expression?';
   runGamesLogic(rulesGame, generateUniqGameData);
