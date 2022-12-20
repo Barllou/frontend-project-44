@@ -16,10 +16,10 @@ const getGreatesCommonDivisor = (firstNum, secondNum) => {
 const runGreatestCommonDivisor = () => {
   const generateUniqGameData = () => {
     const MAX_NUM_GENERATE = 10;
-    const randomFirstValue = getRandomNumber(MAX_NUM_GENERATE);
-    const randomSecondValue = getRandomNumber(MAX_NUM_GENERATE);
-    const question = `${Math.min(randomFirstValue, randomSecondValue)} ${Math.max(randomFirstValue, randomSecondValue)}`;
-    const gcdNum = getGreatesCommonDivisor(randomFirstValue, randomSecondValue);
+    const firstValue = getRandomNumber(MAX_NUM_GENERATE);
+    const secondValue = getRandomNumber(MAX_NUM_GENERATE);
+    const question = `${Math.min(firstValue, secondValue)} ${Math.max(firstValue, secondValue)}`;
+    const gcdNum = getGreatesCommonDivisor(firstValue, secondValue);
     return [question, String(gcdNum)];
   };
   const rulesGame = 'Find the greatest common divisor of given numbers.';

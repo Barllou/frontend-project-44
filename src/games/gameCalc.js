@@ -2,7 +2,7 @@ import { runGamesLogic } from '../../index.js';
 import getRandomNumber from '../utils.js';
 
 // Equation calculation.
-const getCountExample = (firstNum, secondNum, sign) => {
+const getCalculationResult = (firstNum, secondNum, sign) => {
   switch (sign) {
     case '+':
       return firstNum + secondNum;
@@ -18,14 +18,14 @@ const getCountExample = (firstNum, secondNum, sign) => {
 
 const runFindCountNumbers = () => {
   const generateUniqGameData = () => {
-    const operationSign = ['+', '-', '*'];
+    const operationSigns = ['+', '-', '*'];
     const MAX_NUM_GENERATE = 10;
-    const randomFirstValue = getRandomNumber(MAX_NUM_GENERATE);
-    const randomSecondValue = getRandomNumber(MAX_NUM_GENERATE);
-    const randomSymbol = operationSign[getRandomNumber(operationSign.length - 1)];
-    const finishedExample = getCountExample(randomFirstValue, randomSecondValue, randomSymbol);
-    const question = `${randomFirstValue} ${randomSymbol} ${randomSecondValue}`;
-    return [question, String(finishedExample)];
+    const firstValue = getRandomNumber(MAX_NUM_GENERATE);
+    const secondValue = getRandomNumber(MAX_NUM_GENERATE);
+    const randomSymbol = operationSigns[getRandomNumber(operationSigns.length - 1)];
+    const correctAnswer = getCalculationResult(firstValue, secondValue, randomSymbol);
+    const question = `${firstValue} ${randomSymbol} ${secondValue}`;
+    return [question, String(correctAnswerq)];
   };
   const rulesGame = 'What is the result of the expression?';
   runGamesLogic(rulesGame, generateUniqGameData);

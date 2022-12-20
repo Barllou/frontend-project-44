@@ -1,22 +1,15 @@
 import { runGamesLogic } from '../../index.js';
-import getRandomNumber from '../utils.js';
-
-// Get a random number from the selected range.
-const getRandomNumberFromRange = (min, max) => {
-  const minValue = Math.ceil(min);
-  const maxValue = Math.floor(max);
-  return Math.floor(Math.random() * (maxValue - minValue + 1)) + minValue;
-};
+import { getRandomNumber, getRandomNumberFromRange } from '../utils.js';
 
 // Get an arithmetic progression string.
-const generateArithmeticProgression = (firstNum, elemNum, step) => {
-  const res = [];
+const generateArithmeticProgression = (firstNum, lingthProgression, step) => {
+  const result = [];
   let count = 1;
-  for (let i = firstNum; count <= elemNum; i += step) {
-    res.push(i);
+  for (let i = firstNum; count <= lingthProgression; i += step) {
+    result.push(i);
     count += 1;
   }
-  return res;
+  return result;
 };
 
 const runArithmeticProgression = () => {
@@ -26,24 +19,24 @@ const runArithmeticProgression = () => {
     const MIN_NUM_STEP = 1;
     const MAX_NUM_STEP = 10;
     const firstNum = getRandomNumber();
-    const elemNum = getRandomNumberFromRange(MIN_NUM_ITER, MAX_NUM_ITER);
+    const lingthProgression = getRandomNumberFromRange(MIN_NUM_ITER, MAX_NUM_ITER);
     const step = getRandomNumberFromRange(MIN_NUM_STEP, MAX_NUM_STEP);
-    const hidden = getRandomNumberFromRange(1, elemNum);
-    const arrProgression = generateArithmeticProgression(firstNum, elemNum, step);
-    let arrProgressionString = '';
+    const hiddenPosition = getRandomNumberFromRange(1, lingthProgression);
+    const arithmeticProgression = generateArithmeticProgression(firstNum, lingthProgression, step);
+    let progressionLine = '';
     let hiddenNum;
     let count = 1;
-    for (let i = 0; i < arrProgression.length; i += 1) {
-      if (hidden === count) {
-        arrProgressionString += '.. ';
-        hiddenNum = arrProgression[i];
+    for (let i = 0; i < arithmeticProgression.length; i += 1) {
+      if (hiddenPosition === count) {
+        progressionLine += '.. ';
+        hiddenNum = arithmeticProgression[i];
         count += 1;
       } else {
-        arrProgressionString += `${arrProgression[i]} `;
+        progressionLine += `${arithmeticProgression[i]} `;
         count += 1;
       }
     }
-    return [arrProgressionString, String(hiddenNum)];
+    return [progressionLine, String(hiddenNum)];
   };
   const rulesGame = 'What number is missing in the progression?';
   runGamesLogic(rulesGame, generateUniqGameData);
