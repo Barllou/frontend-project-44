@@ -22,7 +22,7 @@ $ make install
 make 'name game' or...
 brain-'name game'
 
-game name:
+name game:
    - even
    - calc
    - gcd
